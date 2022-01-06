@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import HomePage from './component/HomePage';
+import { Routes,Route } from "react-router-dom";
+import AboutPage from "./component/AboutPage";
+import CategoriesPage from "./component/CategoriesPage";
+import ContactPage from "./component/ContactPage";
+import DashboardPage from "./component/DashboardPage";
+import FactorControl from "./component/Factorcontrol";
+import ProductPage from "./component/ProductControl";
+import StoreConrtrol from "./component/Storecontrol";
+import UserControl from "./component/UserControl";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />}>
+          <Route path="about" element={<AboutPage />} />
+          <Route path="categories" element={<CategoriesPage />} />
+          <Route path="contact" element={<ContactPage />} />
+      </Route>
+      <Route path="dashboard" element={<DashboardPage />}>
+          <Route path="user" element={<UserControl/>}></Route>
+          <Route path="product" element={<ProductPage/>}></Route>
+          <Route path="factor" element={<FactorControl/>}></Route>
+          <Route path="store" element={<StoreConrtrol/>}></Route>
+      </Route>
+   </Routes>
   );
 }
 

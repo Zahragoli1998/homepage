@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.homepage{
+  background: url('./img/3.jpg');
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboardpage{
+  background: url('./img/3.jpg');
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboardbox{
+  float: right;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:10%;
+  background-color: rgba(187, 242, 245, 0.185);
+  margin: 1%;
+  border-radius: 10%;
+  border: 1px solid rgba(156, 155, 155, 0.253);
 }
-
-.App-link {
-  color: #61dafb;
+.dashboard-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-list a{
+  margin: 10%;
+  padding: 15%;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Patrick Hand', cursive;
+  color: black;
+  
+}
+.dashboard-list a:hover,
+.dashboard-list a::after{
+  background-color: rgba(209, 170, 224, 0.534);
+  border: 1px solid rgba(156, 155, 155, 0.253);
+  border-radius: 1em ;
+}
+.dashboard-main{
+  background-color: rgba(187, 242, 245, 0.185);
+  width: 87%;
+  height: 100%;
+  text-align: center;
+  margin: 1%;
+  border-radius:3%;
+  border: 1px solid rgba(156, 155, 155, 0.253);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
+}
+.navbar{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(241, 246, 247, 0.363);
+  border: 1px solid rgba(156, 155, 155, 0.253);
+  border-radius: 1em;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 2%;
+  padding: 1%;
+  font-size: 1.5em;
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  
+}
+.nav-left a:hover,
+.nav-left a::after{
+  background-color: rgb(161, 211, 211);
+  border: 1px solid rgba(156, 155, 155, 0.253);
+  border-radius: 1em ;
+}
+.nav-left{
+width: 50%;
+}
+.outlethome{
+  background-color: rgba(187, 242, 245, 0.185);
+  height: 85%;
+  text-align: center;
+  margin: 1%;
+  border-radius: 1em ;
+  border: 1px solid rgba(156, 155, 155, 0.253);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
 }
